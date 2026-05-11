@@ -29,7 +29,7 @@
             width: 200vw;
             height: 200vh;
             z-index: -1;
-            background: radial-gradient(#2e3436, #4e9a06, #204a87, #5c3566, #2e3436, rgba(0,0,0,0));
+            background: radial-gradient(#4e9a06, #204a87, var(--accent-primary-dark), #2e3436, rgba(0,0,0,0), rgba(0,0,0,0));
             /*background-size: 400% 400%;
             animation: gradientBG 15s ease infinite; */
             animation: giraBG 15s ease infinite;
@@ -103,12 +103,12 @@
             box-shadow: 0 10px 20px rgba(0,0,0,0.3);
         }
 */
-        /* Social Icons (Orizzontali) */
+        /* Social Icons (Orizzontali) *
         .social-horizontal {
             display: flex;
             gap: 25px;
             font-size: 1.8rem;
-        }
+        }*/
 
         .social-icon {
             color: #eeeeec;
@@ -132,7 +132,7 @@
 </head>
 <body>
     <div class="bg-animated"></div>
-    <div class="main-container">
+    <div id="main-container" class="container">
         <img src="https://valentino.catalano.tech/docs/logo/foto.jpg" alt="Profilo" class="profile-img">  
         <h1>Valentino Catalano</h1>
 
@@ -147,7 +147,7 @@
         </div>
 
         <!-- Social Icons -->
-        <div class="social-horizontal">
+        <div class="social-horizontal auth-footer">
             <a href="https://www.linkedin.com/in/valentinocatalano" class="social-icon" target="_blank" title="LinkedIn">
                 <i class="fab fa-linkedin"></i>
             </a>
