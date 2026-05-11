@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Valentino Catalano | Linktree Style</title>
     <!-- Importiamo FontAwesome per le icone social -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://test.catalano.tech/framework.css">
     <style>
         /* Reset e Font */
         * {
@@ -14,7 +14,10 @@
             box-sizing: border-box;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
-
+        body {
+            background-color: var(--surface-main);
+        }
+        
         /* Contenitore per lo sfondo animato */
         .bg-animated {
             position: fixed;
@@ -25,7 +28,7 @@
             width: 200vw;
             height: 200vh;
             z-index: -1;
-            background: radial-gradient(#2e3436, #4e9a06, #204a87, #5c3566, #2e3436);
+            background: radial-gradient(rgba(0,0,0,0), #2e3436, #4e9a06, #204a87, #5c3566, #2e3436);
             /*background-size: 400% 400%;
             animation: gradientBG 15s ease infinite; */
             animation: giraBG 15s ease infinite;
@@ -78,7 +81,7 @@
             gap: 15px;
             margin-bottom: 40px;
         }
-
+/*
         .btn-link {
             display: block;
             padding: 15px;
@@ -98,7 +101,7 @@
             transform: translateY(-3px);
             box-shadow: 0 10px 20px rgba(0,0,0,0.3);
         }
-
+*/
         /* Social Icons (Orizzontali) */
         .social-horizontal {
             display: flex;
@@ -134,7 +137,7 @@
 
         <!-- Pulsanti Principali -->
         <div class="links-vertical">
-            <a href="https://valentino.catalano.tech" class="btn-link">
+            <a href="https://valentino.catalano.tech" class="btn-link gnu-input">
                 <i class="fas fa-globe"></i> IL MIO SITO
             </a>
             <a href="https://valentino.catalano.tech/#CV" class="btn-link">
