@@ -23,15 +23,21 @@
             width: 100%;
             height: 100%;
             z-index: -1;
-            background: linear-gradient(-45deg, #2e3436, #4e9a06, #204a87, #5c3566);
-            background-size: 400% 400%;
-            animation: gradientBG 15s ease infinite;
+            background: radial-gradient(#2e3436, #4e9a06, #204a87, #5c3566, #2e3436);
+            background-size: 300% 300%;
+            /* animation: gradientBG 15s ease infinite; */
+            animation: giraBG 15s ease infinite;
         }
 
         @keyframes gradientBG {
             0% { background-position: 0% 50%; }
             50% { background-position: 100% 50%; }
             100% { background-position: 0% 50%; }
+        }
+        @keyframes giraBG {
+            0% { rotate: 0deg; }
+            50% { rotate: 180deg; }
+            100% { rotate: 360deg; }
         }
 
         /* Container Principale */
@@ -129,7 +135,7 @@
             <a href="https://valentino.catalano.tech" class="btn-link">
                 <i class="fas fa-globe"></i> IL MIO SITO
             </a>
-            <a href="mailto:hiper4u@gmail.com?subject=Richiesta%20CV" class="btn-link">
+            <a href="https://valentino.catalano.tech/#CV" class="btn-link">
                 <i class="fas fa-file-pdf"></i> RICHIEDI IL MIO CV
             </a>
         </div>
