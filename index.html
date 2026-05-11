@@ -14,9 +14,10 @@
             padding: 0;
             box-sizing: border-box;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }*/
+        }
         body {
             background-color: var(--surface-main);
+            background: var(--surface-main) !important;
         }
         @media screen and (min-width: 1280px) and (min-height: 768px) and (orientation: landscape) {
             #main-container::after {top: 7vh;}
@@ -73,6 +74,7 @@
             display: flex;
             gap: 25px;
             font-size: 1.8rem;
+            align-items: center;
         }
 
         .social-icon {
