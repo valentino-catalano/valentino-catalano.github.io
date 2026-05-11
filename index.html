@@ -18,6 +18,9 @@
         body {
             background-color: var(--surface-main);
         }
+        @media screen and (min-width: 1280px) and (min-height: 768px) and (orientation: landscape) {
+            #main-container::after {top: 6vh;}
+        }
         
         /* Contenitore per lo sfondo animato */
         .bg-animated {
@@ -35,11 +38,6 @@
             animation: giraBG 15s ease infinite;
         }
 
-        @keyframes gradientBG {
-            0% { background-position: 0% 50%; }
-            50% { background-position: 100% 50%; }
-            100% { background-position: 0% 50%; }
-        }
         @keyframes giraBG {
             0% { rotate: 0deg; }
             50% { rotate: 180deg; }
@@ -73,7 +71,7 @@
             text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
         }
 
-        /* Tasti Verticali *
+        /* Tasti Verticali */
         .links-vertical {
             width: 100%;
             max-width: 400px;
@@ -159,9 +157,9 @@
             </a>
         </div>
 
-        <div class="footer footer-text">
+        <footer class="footer-text">
             By <i>Vale</i>
-        </div>
+        </footer>
     </div>
 
 </body>
